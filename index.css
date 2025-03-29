@@ -1,0 +1,11 @@
+* {
+    background-color: black;
+}
+
+.imagenPrincipal {
+    z-index: 1;
+}
+
+.textoCritico {
+    color: whitesmoke;
+}
