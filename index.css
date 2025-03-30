@@ -98,7 +98,7 @@ a {
 .textoCritico {
     /*General*/
     position: relative;
-    max-width:500px;
+    max-width:400px;
     z-index: 0;
     margin: 50px auto 50px 50px; /* Espaciado uniforme arriba y a los lados */
     padding: 5px;
