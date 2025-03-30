@@ -4,14 +4,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('imgs/BRC-01-011bis.jpg');
-    background-size: cover;
-    background-size: 2000px;
-    width: 100vh;
 }
 
 html { 
     width: 62.5%;
+}
+
+body {
+    background-image: url('imgs/IMG_003.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 1500px;
+    width: 100vw;
 }
 
 ul, ol {
@@ -27,6 +31,7 @@ a {
 
 .contenedorPrincipal { 
     position: relative;
+    margin: 20px;
 }
 
 .grillaImagenes {
@@ -38,8 +43,7 @@ a {
     left: 20%;
     position: absolute;
     background-clip: text;
-    width: 100%;
-    z-index: 2;
+    z-index: 1;
 }
 
 .imagenGrilla {
@@ -47,8 +51,8 @@ a {
     width: 500px;
     object-fit: cover;
     opacity: 0;
-    border-radius: 10px;
-    transition: opacity 15s ease-in-out, transform 15s ease-in-out;  
+    /*border-radius: 10px;*/
+    transition: opacity 8s ease-in-out, transform 15s ease-in-out;  
 }
 
 .imagenGrilla:hover {
@@ -82,25 +86,29 @@ a {
     }
 }
 
-.imagenPrincipal {
+/*.imagenPrincipal {
     position: absolute; 
     top: 0; 
     left: 0;
     width: 2000px;
     height: auto;
     z-index: 0;
-}
+}*/
 
 .textoCritico {
-    position: absolute;
-    background-clip: text;
-    width:400px;
+    /*General*/
+    position: relative;
+    max-width:500px;
+    z-index: 0;
+    margin: 50px auto 50px 50px; /* Espaciado uniforme arriba y a los lados */
+    padding: 5px;
+    /*Tipografía*/
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
-    color: whitesmoke;
-    z-index: 2;
-    margin-top: 50px;
-    margin-left: 50px;
-    padding-bottom: 50px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
+    color: black;
+    line-height: 1.5;
+    /*Fondo del texto*/
+    background: rgba(255, 255, 255, 0.8);
+    /*Efectos texto*/
+    text-shadow: 2px 2px 5px rgba(116, 112, 112, 0.5);
+   }
