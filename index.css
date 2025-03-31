@@ -58,7 +58,7 @@ a {
 .imagenGrilla:hover {
     /*animation: scaleUp 15s ease-in-out forwards;*/
     transform: scale(5);
-    opacity: 0.8;
+    opacity: 0.9;
     cursor: grab;
 }
 
